@@ -168,3 +168,4 @@ for (let i = 0; i < nombres.length; i++) {
 //     ```
 
 //     NOTA: los 3 pasos de este ejercicio se deben realizar con programación según lo visto en clase.
+
