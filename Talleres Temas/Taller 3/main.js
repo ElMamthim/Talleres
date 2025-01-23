@@ -120,7 +120,14 @@ console.log('La lista ordenada es', listan(nume));
 
 // 8. Eliminar elementos duplicados: Dada una lista de elementos, crea una función en JavaScript que recorra la lista y elimine los elementos duplicados. Devuelve una nueva lista que contenga únicamente los elementos únicos.
 
+function elementosduplicados() {
+    for (let i = 0; i < lista.length; i++) {
 
+    }
+}
+
+const numer = [2, 3, 2, 11, 12, 1, 5, 2, 5, 16, 6, 1, 2, 3];
+console.log('La lista ordenada es', elementosduplicados(numer));
 
 // 9. Suma de dos listas: Dadas dos listas de números del mismo tamaño, crea una función en JavaScript que recorra ambas listas y devuelva una nueva lista donde cada elemento sea la suma de los elementos correspondientes de las dos listas.
 
