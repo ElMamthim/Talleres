@@ -1,19 +1,19 @@
 // //1. Escribe un programa que pida al usuario ingresar un número, luego pide un segundo número e imprime en la consola la suma de los dos números ingresados.
-// const nu1 = +prompt('Ingresa un numero');
-// const nu2 = +prompt('Ingresa otro numero');
+const nu1 = +prompt('Ingresa un numero');
+const nu2 = +prompt('Ingresa otro numero');
 
-// const suma = nu1 + nu2;
-// console.log('La suma de ' + nu1 + ' + ' + nu2 + ' es ' + suma);
+const suma = nu1 + nu2;
+console.log('La suma de ' + nu1 + ' + ' + nu2 + ' es ' + suma);
 
 // //2. Escribe un programa que pida al usuario su año de nacimiento y nombre e imprime su edad actual en la consola con la frase `Hola X, grandioso! Tienes X años`. Asume que el año actual es 2020 y el usuario ingresa 2000, el programa debe imprimir en la consola: `Hola Juan, grandioso! Tienes 20 años`
 
-// const nombre = prompt('Ingresa tu nombre')
-// const fecha = prompt(nombre + ' ingresa tu año de nacimiento');
+const nombre = prompt('Ingresa tu nombre')
+const fecha = prompt(nombre + ' ingresa tu año de nacimiento');
 
-// const añoactual = 2025;
-// const edad = añoactual - fecha
+const añoactual = 2025;
+const edad = añoactual - fecha
 
-// console.log('Hola ' + nombre, 'grandioso! Tienes ' + edad + ' años')
+console.log('Hola ' + nombre, 'grandioso! Tienes ' + edad + ' años')
 
 // //3. Escribe un programa que le pida al usuario un número e imprima si es un múltiplo de 5 o no.
 
@@ -21,54 +21,54 @@
 
 // //*NOTA: Un múltiplo de 5 es aquel que dividido por 5 da por resultado un número entero (sin residuo). Por ejemplo 10, 15, 20, etc. son múltiplos de 5. 11 no es múltiplo de 5 porque quedaría un residuo de 1.*
 
-// const numero = prompt('Ingresa un numero');
+const numero = prompt('Ingresa un numero');
 
-// if (isNaN(numero)) {
-//     console.log('Ingresaste un valor que no es un numero');
-// }
+if (isNaN(numero)) {
+    console.log('Ingresaste un valor que no es un numero');
+}
 
-// else
-//     if (numero % 5 === 0) {
-//         console.log('El numero', numero, 'Es multiplo de 5');
-//     } 
-//     else {
-//         console.log('El numero', numero, 'No es multiplo de 5');
-//     }
+else
+    if (numero % 5 === 0) {
+        console.log('El numero', numero, 'Es multiplo de 5');
+    } 
+    else {
+        console.log('El numero', numero, 'No es multiplo de 5');
+    }
 
-// //     4. Escribe un programa que le pida al usuario ingresar un número.
-// //    - Si el número es múltiplo de 3 debe imprimir en la consola `bing`.
-// //    - Si el número es múltiplo de 5 debe imprimir en la consola `bong`.
-// //    - Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola `bingbong`.
-// //    - Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
+//     4. Escribe un programa que le pida al usuario ingresar un número.
+//    - Si el número es múltiplo de 3 debe imprimir en la consola `bing`.
+//    - Si el número es múltiplo de 5 debe imprimir en la consola `bong`.
+//    - Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola `bingbong`.
+//    - Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
-// const num = prompt('Ingresa un numero');
+const num = prompt('Ingresa un numero');
 
-// if (isNaN(num)) {
-//     console.log('Ingresaste un valor que no es un numero');
-// }
+if (isNaN(num)) {
+    console.log('Ingresaste un valor que no es un numero');
+}
 
-// else 
-//     if (num % 3 === 0 && num % 5 === 0) {
-//         console.log('bingbong');
-//     } 
-//     else if (num % 3 === 0) {
-//         console.log('bing');
-//     } 
-//     else if (num % 5 === 0) {
-//         console.log('bong');
-//     }
-//     else {
-//         console.log(num);
-//     }
+else 
+    if (num % 3 === 0 && num % 5 === 0) {
+        console.log('bingbong');
+    } 
+    else if (num % 3 === 0) {
+        console.log('bing');
+    } 
+    else if (num % 5 === 0) {
+        console.log('bong');
+    }
+    else {
+        console.log(num);
+    }
 
 // // 5. Escribe un programa que le pida al usuario ingresar una frase. El programa debe imprimir la frase en la consola 10 veces.
 // // NOTA: utiliza un ciclo para imprimir la frase las 10 veces.
 
-// const frase = prompt('Ingresa una frase');
+const frase = prompt('Ingresa una frase');
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(i, frase);
-// }
+for (let i = 1; i <= 10; i++) {
+    console.log(i, frase);
+}
 
 // // 6. Escribe un programa que le pida al usuario una frase y un número. El programa debe imprimir la frase en la consola el número de veces que ingresó el usuario.
 // //     Por ejemplo, si el usuario ingresó la frase `Hola Mundo` y el número 5, el programa debe imprimir `Hola Mundo` 5 veces:
@@ -81,12 +81,12 @@
 // //     Hola Mundo
 // //     ```
 
-// const fras = prompt('Ingresa una frase');
-// const nume = prompt('Ingresa un numero');
+const fras = prompt('Ingresa una frase');
+const nume = prompt('Ingresa un numero');
 
-// for (let i = 1; i <= nume; i++) {
-//     console.log(i, fras);
-// }
+for (let i = 1; i <= nume; i++) {
+    console.log(i, fras);
+}
 
 // // 7. Escribe un programa para la consola que le pida al usuario dos números e imprima en la consola los números en ese rango. Por ejemplo, si el usuario ingresa 5 como primer número y 10 como segundo número, el programa debe imprimir:
 
@@ -104,20 +104,20 @@
 // //        - Fíjate que se imprimen también los números en los límites, en el ejemplo el 5 y el 10.
 
 
-// const numer = parseInt(prompt('Ingresa un numero'));
-// const numer2 = parseInt(prompt('Ingresa otro numero'));
+const numer = parseInt(prompt('Ingresa un numero'));
+const numer2 = parseInt(prompt('Ingresa otro numero'));
 
-// if (isNaN(numer) || isNaN(numer2)) {
-//     console.log('Ingresaste un valor que no es numero');
-// } 
-// else if (numer > numer2) {
-//     console.log('El primer numero debe ser menor que el segundo prueba nuevamente');
-// } 
-// else {
-//     for (let i = numer; i <= numer2; i++) {
-//         console.log(i);
-//     }
-// }
+if (isNaN(numer) || isNaN(numer2)) {
+    console.log('Ingresaste un valor que no es numero');
+} 
+else if (numer > numer2) {
+    console.log('El primer numero debe ser menor que el segundo prueba nuevamente');
+} 
+else {
+    for (let i = numer; i <= numer2; i++) {
+        console.log(i);
+    }
+}
 
 // 8. Crea un programa a partir de las siguientes instrucciones:
 

@@ -2,7 +2,7 @@
 
 function sumar(lista) {
     let suma = 0;
-    
+
     for (let i = 0; i < lista.length; i++) {
         suma += lista[i];
     }
@@ -25,7 +25,7 @@ function nummax(lista) {
     return max;
 }
 
-const num = [20, 1, 2, 15 ,30];
+const num = [20, 1, 2, 15, 30];
 console.log('El numero maximo es', nummax(num));
 
 // 3. Filtrar números pares: Dada una lista de números, crea una función en JavaScript que recorra la lista y filtre solo los números pares. Devuelve una nueva lista que contenga únicamente los números pares encontrados.
@@ -54,12 +54,12 @@ console.log('Los numeros pares son', paresf(pars));
 
 function contar(lista) {
     const conteo = {};
-    
+
     for (let i = 0; i < lista.length; i++) {
         const elemento = lista[i];
         if (conteo[elemento]) {
             conteo[elemento]++;
-        } 
+        }
         else {
             conteo[elemento] = 1;
         }
@@ -73,7 +73,7 @@ console.log('Los elementos encontrados son', contar(elementos));
 // 5. Encontrar la cadena más larga: Dada una lista de cadenas, crea una función en JavaScript que recorra la lista y encuentre la cadena más larga. Devuelve esa cadena.
 
 function cadenalarga(lista) {
-    let cadenamlarga = ''; 
+    let cadenamlarga = '';
 
     for (let i = 0; i < lista.length; i++) {
         if (lista[i].length > cadenamlarga.length) {
@@ -97,15 +97,15 @@ function concatenacion(lista) {
     return cadenaconcatenada;
 }
 
-const cadenasc = ['Hola', ' ', 'como', ' ', 'estan', ' ', 'todos!' ];
+const cadenasc = ['Hola', ' ', 'como', ' ', 'estan', ' ', 'todos!'];
 console.log('La concatenacion es', concatenacion(cadenasc));
 
 // 7. Ordenar lista de números: Dada una lista de números desordenados, crea una función en JavaScript que recorra la lista y la ordene de menor a mayor. Devuelve la lista ordenada.
 
 function listan(lista) {
-    for (let i = 0; i < lista.length; i++) { 
-        for (let j = 0; j < lista.length - 1; j++) { 
-            if (lista[j] > lista[j + 1]) { 
+    for (let i = 0; i < lista.length; i++) {
+        for (let j = 0; j < lista.length - 1; j++) {
+            if (lista[j] > lista[j + 1]) {
                 let list = lista[j];
                 lista[j] = lista[j + 1]; //Let adicional para que se puedan intercambiar los elementos de la lista nume
                 lista[j + 1] = list;
@@ -131,6 +131,35 @@ console.log('La lista ordenada es', elementosduplicados(numer));
 
 // 9. Suma de dos listas: Dadas dos listas de números del mismo tamaño, crea una función en JavaScript que recorra ambas listas y devuelva una nueva lista donde cada elemento sea la suma de los elementos correspondientes de las dos listas.
 
+function sumarlistas(lista1, lista2) {
+    if (lista1.length !== lista2.length) {
+        console.error("Las listas deben tener la misma cantidad de caracteres para poder sumarse");
+        return [];
+    }
+    
+    let resultado = [];
+    for (let i = 0; i < lista1.length; i++) {
+        resultado.push(lista1[i] + lista2[i]);
+    }
+    return resultado;
+}
 
+const lista1 = [1, 2, 3, 4, 5];
+const lista2 = [10, 20, 30, 40, 50];
+console.log("La suma de la lista es", sumarlistas(lista1, lista2));
 
 // 10. Encontrar la intersección de dos listas: Dadas dos listas de números, crea una función en JavaScript que recorra ambas listas y devuelva una nueva lista que contenga los elementos comunes a ambas listas.
+
+function interseccionListas(listaa, listab) {
+    let resultado = [];
+    for (let i = 0; i < lista1.length; i++) {
+        if (listab.includes(listaa[i])) {
+            resultado.push(listaa[i]);
+        }
+    }
+    return resultado;
+}
+
+const listaa = [1, 2, 3, 4, 5];
+const listab = [4, 5, 6, 7, 8];
+console.log("Las interseccion de las lista es", interseccionListas(listaa, listab));
